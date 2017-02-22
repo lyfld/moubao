@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF5001"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/details_good_webview_btn_back"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_action_back"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/details_webview_good_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/details_good_webview_btn_back"
+            android:text="商品详细"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/goods_webview_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+</LinearLayout>

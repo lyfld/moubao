@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF5001"
+        >
+
+        <Button
+            android:id="@+id/shop_address_btn_back"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_action_back"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/shop_address_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/shop_address_btn_back"
+            android:text="收货地址"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+        <Button
+            android:id="@+id/shop_address_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="添加"
+            android:background="#FF5001"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shop_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

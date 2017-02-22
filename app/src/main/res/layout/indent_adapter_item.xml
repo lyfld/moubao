@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/indent_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/indent_goodsname"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/indent_goodsnum"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/indent_gprice"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="共"/>
+        <TextView
+            android:id="@+id/indent_goodspriceandnum"
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red"
+            android:text="1"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="件商品，合计"/>
+        <TextView
+            android:id="@+id/indent_goodsprice"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red"
+            android:text="0"
+            />
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="元"/>
+
+    </LinearLayout>
+
+</LinearLayout>

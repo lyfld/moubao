@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/details_list_view"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        fresco:actualImageScaleType="fitXY"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/details_list_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/details_list_view"
+        android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/details_list_price_tv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="#ff0000"
+        android:text="¥1299.00"
+        android:layout_toRightOf="@+id/details_list_view"
+        android:layout_below="@+id/details_list_title_tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/details_list_evaluate_tv"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/details_list_view"
+        android:layout_below="@+id/details_list_price_tv"
+        android:text="评价五星"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/details_list_salenum_tv"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/details_list_evaluate_tv"
+        android:layout_below="@+id/details_list_price_tv"
+        android:text="已售 0 件"
+        android:layout_marginTop="5dp"
+        />
+
+
+</RelativeLayout>

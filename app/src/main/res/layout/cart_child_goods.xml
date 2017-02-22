@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <CheckBox
+            android:id="@+id/cart_child_chexbox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/cart_child_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/cart_child_goodsname"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/cart_child_goodsnum"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/cart_child_gprice"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="共"/>
+        <TextView
+            android:id="@+id/cart_child_goodspriceandnum"
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red"
+            android:text="0"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="件商品，合计"/>
+        <TextView
+            android:id="@+id/cart_child_goodsprice"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red"
+            android:text="0"
+            />
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="元"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <Button
+        android:id="@+id/cart_child_delt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:id="@+id/cart_child_remove"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/a89"
+        android:layout_marginLeft="100dp"
+        />
+
+    <EditText
+        android:id="@+id/cart_child_buynum_et"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:gravity="center"
+        android:textSize="15sp"
+        />
+    <Button
+        android:id="@+id/cart_child_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/a84"
+
+        />
+
+
+</LinearLayout>
+
+    
+
+</LinearLayout>
